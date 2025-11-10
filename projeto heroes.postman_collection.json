@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "ff240c17-c5e1-4774-b2f5-3f52906c6137",
+		"name": "projeto heroes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "8414316",
+		"_collection_link": "https://cin-star-944236.postman.co/workspace/cin-star-944236-Workspace~2af8054a-8bb0-4606-8466-ce5dd5ae706e/collection/8414316-ff240c17-c5e1-4774-b2f5-3f52906c6137?action=share&source=collection_link&creator=8414316"
+	},
+	"item": [
+		{
+			"name": "cadastro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"João Silva\",\r\n  \"login\": \"joaosilva\",\r\n  \"senha\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n  \"login\": \"joaosilva\",\r\n  \"senha\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "login user2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n  \"login\": \"joaosilva\",\r\n  \"senha\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "get heroi",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2Fvc2lsdmEiLCJpYXQiOjE3NjI3NDEwMTgsImV4cCI6MTc2Mjc0NDYxOH0.Ww02LzxWqTCQpLykTIzRDpcBolucF8z1Kxp3fV1K5iA"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/heroes/1"
+			},
+			"response": []
+		},
+		{
+			"name": "get eu",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2Fvc2lsdmEiLCJpYXQiOjE3NjI3NDEwMTgsImV4cCI6MTc2Mjc0NDYxOH0.Ww02LzxWqTCQpLykTIzRDpcBolucF8z1Kxp3fV1K5iA"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/usuarios/me"
+			},
+			"response": []
+		},
+		{
+			"name": "get user2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2Fvc2lsdmEiLCJpYXQiOjE3NjI3NDEwMTgsImV4cCI6MTc2Mjc0NDYxOH0.Ww02LzxWqTCQpLykTIzRDpcBolucF8z1Kxp3fV1K5iA"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/usuarios/me"
+			},
+			"response": []
+		},
+		{
+			"name": "salvar Deck",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2Fvc2lsdmEiLCJpYXQiOjE3NjI3NDA0NTIsImV4cCI6MTc2Mjc0NDA1Mn0.fUTYlmF_Gff8ThFtCMCLV4RCVqmJ2Furfqzh3orczdc"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"heroesIds\": [1,3]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/usuarios/deck"
+			},
+			"response": []
+		},
+		{
+			"name": "salvar Deck user2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2Fvc2lsdmEiLCJpYXQiOjE3NjI3NDA0NTIsImV4cCI6MTc2Mjc0NDA1Mn0.fUTYlmF_Gff8ThFtCMCLV4RCVqmJ2Furfqzh3orczdc"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"heroesIds\": [1,3]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/usuarios/deck"
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar Deck",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2Fvc2lsdmEiLCJpYXQiOjE3NjI3NDUwMzcsImV4cCI6MTc2Mjc0ODYzN30.Tqz2kd0o-nlKEPqOVCFH1L7zfmN4-KStypxwPYu7Znc"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nomeDeck\": \"Deck Batman\",\r\n  \"heroesIds\": [1,2]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/usuarios/deck/1"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
